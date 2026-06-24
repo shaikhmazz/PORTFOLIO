@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shaikh Mazein Ahmed — DevOps Engineer</title>
+<meta name="description" content="Portfolio of Shaikh Mazein Ahmed — DevOps & Release Engineering, building from a production-grade ML pipeline.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="wordmark">MAZEIN<span class="wordmark-dot">.</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#process">Toolset</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">DEVOPS ENGINEER · RELEASE ENGINEERING — HYDERABAD, INDIA</p>
+        <h1>I build pipelines that<br>catch what's easy to miss —<br>in scans, and in releases.</h1>
+        <p class="hero-sub">
+          I'm Mazein — a 2026 CS graduate from MJCET. My major project was a two-stage
+          pipeline that had to be reliable before it could be useful: measured, versioned,
+          and served through a real API. I'm moving that same discipline — build, automate,
+          monitor, ship — into DevOps and release engineering.
+        </p>
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary">See the work</a>
+          <a href="https://github.com/shaikhmazz" class="btn btn-ghost" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="monitor" role="img" aria-label="Animated diagnostic waveform display, decorative">
+        <div class="monitor-head">
+          <span class="dot dot-live"></span>
+          <span class="monitor-label">PIPELINE.LOG — geoproteonet</span>
+        </div>
+        <div class="monitor-wave">
+          <svg class="wave-svg" viewBox="0 0 600 140" preserveAspectRatio="none">
+            <g class="wave-track">
+              <path d="M0,70 L20,70 L34,70 L42,20 L50,120 L58,40 L66,70 L90,70 L104,70 L112,30 L120,110 L128,50 L136,70 L160,70 L600,70"
+                    fill="none" stroke="var(--signal)" stroke-width="2"/>
+              <path d="M0,70 L20,70 L34,70 L42,20 L50,120 L58,40 L66,70 L90,70 L104,70 L112,30 L120,110 L128,50 L136,70 L160,70 L600,70"
+                    fill="none" stroke="var(--signal)" stroke-width="2" transform="translate(600,0)"/>
+            </g>
+          </svg>
+        </div>
+        <div class="monitor-vitals">
+          <div class="vital">
+            <span class="vital-label">DICE COEF.</span>
+            <span class="vital-value">93.99<small>%</small></span>
+          </div>
+          <div class="vital">
+            <span class="vital-label">F1 SCORE</span>
+            <span class="vital-value">92.90<small>%</small></span>
+          </div>
+          <div class="vital">
+            <span class="vital-label">STAGES</span>
+            <span class="vital-value">02<small>/02 passing</small></span>
+          </div>
+          <div class="vital">
+            <span class="vital-label">BUILD</span>
+            <span class="vital-value vital-ok">PASSING</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about" data-reveal>
+    <div class="wrap about-grid">
+      <p class="section-tag">// ABOUT</p>
+      <p class="about-text">
+        I graduated in June 2026 from Muffakham Jah College of Engineering and Technology,
+        Hyderabad, with a B.E. in Computer Science. My major project, GeoProteoNet, is a
+        two-stage diagnostic pipeline that turns Doppler ultrasound video into an early
+        fetal-anemia risk assessment — built end to end, from the model that reads the scan
+        to the FastAPI service that serves the result. Shipping that taught me the part of
+        engineering that isn't the model: versioning, reproducibility, and making sure a
+        pipeline behaves the same way twice. That's the part I want to do full-time, as a
+        DevOps or release engineer — turning working code into something that deploys
+        cleanly, every time.
+      </p>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <!-- ============ FEATURED WORK ============ -->
+  <section class="work" id="work" data-reveal>
+    <div class="wrap">
+      <p class="section-tag">// FEATURED WORK</p>
+      <h2 class="section-title">GeoProteoNet</h2>
+      <p class="work-dek">
+        A non-invasive, two-stage pipeline that screens for fetal anemia from Doppler
+        ultrasound imagery — pairing a custom segmentation network with a classical
+        classifier on the hemodynamic features doctors already trust. Read end to end,
+        it's also a case study in pipeline design: two stages, each with its own
+        success metric, wired together and served through a real API.
+      </p>
+
+      <div class="case-grid">
+
+        <article class="case-block">
+          <h3 class="case-kicker">The problem</h3>
+          <p>
+            Confirming fetal anemia usually means an invasive procedure. Doppler ultrasound
+            of the middle cerebral artery is a safer, non-invasive alternative — but reading
+            it well depends on an expert sonographer's eye. GeoProteoNet automates that read.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3 class="case-kicker">Stage 01 — Segmentation</h3>
+          <p>
+            A custom CNN encoder–decoder locates and segments the artery waveform region in
+            each ultrasound frame, isolating the signal worth measuring from everything around it.
+          </p>
+          <div class="metric-row">
+            <span class="metric-pill">93.99% Dice Coefficient</span>
+          </div>
+        </article>
+
+        <article class="case-block">
+          <h3 class="case-kicker">Stage 02 — Classification</h3>
+          <p>
+            From the segmented waveform, the pipeline extracts five hemodynamic features —
+            PSV, EDV, RI, PI, and S/D ratio — and feeds them to a Random Forest classifier
+            that flags anemia risk.
+          </p>
+          <div class="metric-row">
+            <span class="metric-pill">92.90% F1-score</span>
+          </div>
+        </article>
+
+        <article class="case-block">
+          <h3 class="case-kicker">Serving it</h3>
+          <p>
+            A FastAPI backend wraps the pipeline; a React frontend turns the output into a
+            readable diagnostic report — so the result is usable by a clinician, not just a notebook.
+          </p>
+        </article>
+
+      </div>
+
+      <div class="stack-row">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">TensorFlow</span>
+        <span class="stack-tag">Keras</span>
+        <span class="stack-tag">OpenCV</span>
+        <span class="stack-tag">Scikit-learn</span>
+        <span class="stack-tag">FastAPI</span>
+        <span class="stack-tag">React</span>
+      </div>
+
+      <p class="case-credit">
+        Supervised by Ms. Nabeela Fatima, MJCET · with Mohammad Owais &amp; Shaik Syed
+      </p>
+
+      <a href="https://github.com/shaikhmazz" class="btn btn-ghost" target="_blank" rel="noopener">View on GitHub ↗</a>
+    </div>
+  </section>
+
+  <!-- ============ SECONDARY PROJECT ============ -->
+  <section class="work-secondary" data-reveal>
+    <div class="wrap">
+      <p class="section-tag">// ALSO BUILT</p>
+      <div class="secondary-card">
+        <h3>Sustainable Farming Recommendation System</h3>
+        <p>
+          An IoT-and-ML system that reads live soil and environmental sensor data and
+          recommends crop and fertilizer choices, with results tracked on a Power BI dashboard
+          backed by SQL.
+        </p>
+        <div class="stack-row">
+          <span class="stack-tag">IoT</span>
+          <span class="stack-tag">Machine Learning</span>
+          <span class="stack-tag">SQL</span>
+          <span class="stack-tag">Power BI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEVOPS DIRECTION ============ -->
+  <section class="direction" data-reveal>
+    <div class="wrap">
+      <p class="section-tag">// THE NEXT BUILD</p>
+      <h2 class="section-title">Taking GeoProteoNet to production</h2>
+      <p class="direction-dek">
+        GeoProteoNet works as a trained pipeline. The current build is making it deploy
+        like one — so the resume claims and the repo say the same thing.
+      </p>
+      <div class="direction-grid">
+        <div class="direction-step">
+          <span class="direction-status status-progress">In progress</span>
+          <h4>Containerize</h4>
+          <p>Package the FastAPI service and model artifacts into a Docker image, so the environment ships with the code.</p>
+        </div>
+        <div class="direction-step">
+          <span class="direction-status status-progress">In progress</span>
+          <h4>Deploy to AWS</h4>
+          <p>Run the containerized service on AWS, with the deployment steps documented, not just clicked through once.</p>
+        </div>
+        <div class="direction-step">
+          <span class="direction-status status-progress">In progress</span>
+          <h4>CI/CD pipeline</h4>
+          <p>Automate test → build → deploy on every push, so "it works on my machine" stops being the bar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <section class="stack-section" id="process" data-reveal>
+    <div class="wrap">
+      <p class="section-tag">// HOW I WORK</p>
+      <h2 class="section-title">Toolset</h2>
+      <div class="stack-cols">
+        <div class="stack-col">
+          <h4>Cloud &amp; DevOps</h4>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Linux fundamentals</li>
+            <li>Docker — in progress</li>
+            <li>AWS — in progress</li>
+            <li>CI/CD pipelines — in progress</li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <h4>Backend &amp; Data</h4>
+          <ul>
+            <li>FastAPI</li>
+            <li>React</li>
+            <li>SQL</li>
+            <li>Power BI</li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <h4>Languages &amp; ML</h4>
+          <ul>
+            <li>Python</li>
+            <li>TensorFlow / Keras</li>
+            <li>Scikit-learn</li>
+            <li>OpenCV</li>
+            <li>Pandas / NumPy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ CREDENTIALS ============ -->
+  <section class="credentials" id="credentials" data-reveal>
+    <div class="wrap">
+      <p class="section-tag">// CREDENTIALS</p>
+      <h2 class="section-title">Certifications &amp; Simulations</h2>
+      <div class="cred-grid">
+        <div class="cred-card">
+          <span class="cred-org">Microsoft</span>
+          <span class="cred-name">AI &amp; Machine Learning</span>
+        </div>
+        <div class="cred-card">
+          <span class="cred-org">Cisco</span>
+          <span class="cred-name">AI &amp; Data Science</span>
+        </div>
+        <div class="cred-card">
+          <span class="cred-org">SimpliLearn</span>
+          <span class="cred-name">Machine Learning</span>
+        </div>
+        <div class="cred-card">
+          <span class="cred-org">HP LIFE</span>
+          <span class="cred-name">Data Science</span>
+        </div>
+        <div class="cred-card">
+          <span class="cred-org">HP LIFE</span>
+          <span class="cred-name">Cybersecurity</span>
+        </div>
+        <div class="cred-card">
+          <span class="cred-org">Forage</span>
+          <span class="cred-name">JPMorgan Chase Simulation</span>
+        </div>
+        <div class="cred-card">
+          <span class="cred-org">Forage</span>
+          <span class="cred-name">Tata Simulation</span>
+        </div>
+        <div class="cred-card">
+          <span class="cred-org">Forage</span>
+          <span class="cred-name">Deloitte Simulation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact" data-reveal>
+    <div class="wrap contact-grid">
+      <div>
+        <p class="section-tag">// CONTACT</p>
+        <h2 class="section-title">Let's talk.</h2>
+        <p class="contact-sub">Open to DevOps Engineer and DevOps Release Engineer roles.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:shaikhmazz125@gmail.com" class="contact-link">
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-value">shaikhmazz125@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/shaikh-mazein-ahmed-66773628b" class="contact-link" target="_blank" rel="noopener">
+          <span class="contact-link-label">LinkedIn</span>
+          <span class="contact-link-value">/in/shaikh-mazein-ahmed</span>
+        </a>
+        <a href="https://github.com/shaikhmazz" class="contact-link" target="_blank" rel="noopener">
+          <span class="contact-link-label">GitHub</span>
+          <span class="contact-link-value">/shaikhmazz</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Shaikh Mazein Ahmed</span>
+    <span class="footer-status"><span class="dot dot-live"></span> Open to work</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
